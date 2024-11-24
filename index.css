@@ -18,20 +18,34 @@
 }
 
 body {
+    background-color: var(--color-stone-100);
+}
+
+
+.main-container {
     background-color: var(--color-white);
+    border-radius: 2em;
+    max-width: 764px;
+}
+
+.hero {
+    display: block;
 }
 
 .hero img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .container {
-    padding: 1em;
+    padding: 2em 1.2em;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     color: var(--color-stone-600);
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--color-white);
 }
 
 .container > * + * {
@@ -40,53 +54,43 @@ body {
 
 .container > h1 {
     font-family: "Young Serif", serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1;
     color: var(--color-stone-900);
-}
-
-.container > p {
-    font-family: "Outfit", sans-serif;
-    font-size: 1.45rem;
-    color: var(--color-stone-600);
 }
 
 .container .bold {
     font-weight: 600;
-    display: inline;
 }
 
 .container h2 {
     font-family: "Young Serif", serif;
     color: var(--color-brown-800);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .preparation {
     background-color: var(--color-rose-50);
-    padding: 2em;
-    border-radius: 1em;
+    padding: 1em 2em;
+    border-radius: 0.5em;
 }
 
 .preparation > h2 {
     font-family: "Outfit", sans-serif;
     color: var(--color-rose-800);
     font-weight: 600;
-    font-size: 1.8rem;
-}
-
-.preparation > ul > li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .preparation > ul {
     list-style: none;
-    margin: 1em;
+    margin: 0.8em;
 }
 
 .container ul > li::before {
     position: absolute;
     content: "\2022";
-    font-size: 2rem;
+    font-size: 1.2rem;
     left: 0;
     top: 50%;
     color: var(--color-rose-800);
@@ -108,7 +112,7 @@ body {
 }
 
 .ingredients, .instructions {
-    border-bottom: 2px solid var(--color-stone-150);
+    border-bottom: 1px solid var(--color-stone-150);
     padding-block-end: 1em;
 }
 
@@ -133,10 +137,6 @@ body {
 
 .instructions > ol > li {
     padding-inline-start: 1.3em;
-    font-family: "Outfit", sans-serif;
-    font-weight: 400;
-    color: var(--color-stone-600);
-    font-size: 1.5rem;
 }
 
 .instructions > ol > li::marker {
@@ -166,7 +166,6 @@ body {
 
 .nutrition table tr * {
     flex: 1;
-    align-self: center;
     padding: 1em 0;
 }
 
@@ -176,7 +175,7 @@ body {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 0.6875rem;
     text-align: center;
 }
 
@@ -184,19 +183,29 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 580px) {
+@media only screen and (min-width: 768px) {
     body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        background-color: var(--color-stone-100);
+        justify-content: space-around;
+        gap: 2em;
+        padding: 10em 1em;
     }
 
     .main-container {
-        max-width: 70%;
-        background-color: var(--color-white);
-        padding: 2em;
+        padding: 2.5em;
     }
-}
+
+    .main-container > * + * {
+        margin-block-start: 2.5em;
+    }
+
+    .container {
+        padding: unset;
+    }
+
+    .hero img {
+        border-radius: 1em;
+    }
+} 
