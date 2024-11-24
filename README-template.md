@@ -22,7 +22,19 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+### What I learned
+
+I learned how to markup HTML document semantically and also various CSS fundamentals like working with relative and absolute units with a preference for relative units for responsiveness, the box model, box-shadow, flex box and also CSS variables.
+
+### Continued development
+
+I plan on improving my building more projects and also learn new CSS concepts like Grid and also positioning and stacking.
+
+## Author
+
+- Website - [Olamilekan Akintilebo](https://github.com/hayohtee)
+- Frontend Mentor - [@hayohtee](https://www.frontendmentor.io/profile/hayohtee)
+- Twitter - [@hayohtee](https://x.com/hayohtee)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
